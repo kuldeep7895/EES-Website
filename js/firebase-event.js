@@ -13,6 +13,10 @@ db.collection("events")
   .then(function(doc) {
     if (doc.exists) {
       var item = doc.data();
+      if (!item.done) {
+        let checkKaro = document.getElementById("form_title_insert");
+        checkKaro.appendChild(tempOne());
+      }
       let p = document.getElementById("desp");
       p.innerText = item.description;
       let f = document.getElementById("dynamicForm");
@@ -114,6 +118,18 @@ function anotherOne(u) {
       </div>
     </div>
   </section>`;
+  var div = document.createElement("div");
+  div.innerHTML = el.trim();
+  return div.firstChild;
+}
+
+function tempOne () {
+  var el = `
+  <div class="main_title">
+    <h2>Form</h2>
+    <h1>Form</h1>
+  </div>
+  `
   var div = document.createElement("div");
   div.innerHTML = el.trim();
   return div.firstChild;
