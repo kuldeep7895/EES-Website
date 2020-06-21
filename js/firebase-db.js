@@ -76,6 +76,7 @@ function checkFinalItems(item, id) {
     src=${item.image}
     class="card-img-top"
     alt="..."
+    height=250rem
   />
   <div class="card-body">
     <h5 class="card-title">${item.name}</h5>
