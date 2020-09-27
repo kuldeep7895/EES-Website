@@ -21,7 +21,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <title>Hello, world!</title>
+            <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+    <title>EES</title>
 
     <style>
       section {
@@ -215,11 +219,150 @@
       .team-area .social li.instagram a {
         background-color: #cd486b;
       }
+      #teamPage{
+        margin-top: 0px;
+        width: 100%;
+        height: 120vh;
+        background-image: url("/tmpics/EES17178.jpg");
+        background-size: 100% 100%;
+      }
+      .teamPage2{
+        display: none;
+      }
+      @media only screen and (max-width: 600px) {
+        #teamPage {
+          display: none;
+                }
+        .teamPage2{
+          display: block;
+        }
+      }
+      
     </style>
   </head>
   <body>
+
+
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h" href="index.html"
+                ><img src="img/logo.png" alt="" height="50px"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
+                <ul class="nav navbar-nav menu_nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li> -->
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Blog</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="interview.html"
+                          >Interview Series</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="resorces.html">Resources</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a
+                      href="contact.html"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Our Team</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html"
+                          >Current Team</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact17.html">2017-18</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact16.html">2016-17</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact15.html">2015-16</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </div>
+    </header>
+    <!--================Header Menu Area =================-->
+  
+          <!--================Home Banner Area =================-->
+          <section class="teamBanner">
+             <div id="teamPage">
+               
+             </div>
+          </section>
+
+          <section class="banner_area teamPage2">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<div class="page_link">
+							<a href="index.html">Home</a>
+							<a href="contact.html">CONTACT</a>
+						</div>
+						<h2>CONTACT US</h2>
+
+					</div>
+				</div>
+            </div>
+        </section>
+  
     <section id="team" class="team-area">
-      <div class="container">
+      <div class="container pr-4 pl-4">
         <div class="row">
           <div class="col-md-12 text-center">
             <h2>Our <span style="color: crimson">Team</span></h2>
@@ -1533,7 +1676,7 @@
               <div class="thumb">
                 <img
                   class="img-fluid"
-                  src="tmpics/suhani.jpg"
+                  src="tmpics/suhani.png"
                   alt="Thumb"
                 />
 
