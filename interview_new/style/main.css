@@ -219,7 +219,7 @@ header i:hover {
 /* Contents Main */
 .contents-main {
   flex-grow: 1;
-  background-image: url(../img/logo_transparentees.png);
+  background-image: url(../img/ees.png);
   background-size:100% 90vh;
   display: flex;
   justify-content: space-between;
