@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EES Interview Series</title>
+    <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="interview_new/style/main.css">
+  </head>
+  <body>
+
+    <!-- Contenitore generale -->
+    <div id="app">
+
+      <!-- Contenitore principale -->
+      <div id="box">
+
+        <!-- Side box -->
+        <div class="side">
+
+          <!-- Side Header -->
+          <header class="side-header">
+
+            <!-- Side dati utente -->
+            <div class="side-user">
+              <img src="img/ees.png" alt="avatar">
+            </div>
+
+            <!-- Side icone -->
+            <div class="icons">
+              <i class="fas fa-circle-notch"></i>
+              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+
+          </header>
+
+          <!-- Side main -->
+          <main>
+            <!-- Sezione input chat -->
+            <section class="new-chat_container">
+              <div class="new-chat_icon">
+                <label for="new-chat">
+                  <i class="fas fa-search"></i>
+                </label>
+              </div>
+
+              <input type="text" id="new-chat" name="new-chat" class="new-chat" placeholder="Search For The Interviewee">
+            </section>
+
+            <!-- Sezione contatti -->
+            <section class="contacts_container">
+              <ul class="contacts">
+
+                <li class="contact" data-contact="0">
+                  <div class="contacts-user">
+                    <img src="interview_new/img/Abhinav_Kalra.jpg" alt="avatar">
+                    <div class="informations">
+                      <h4>Abhinav Kalra</h4>
+                      <p>Bain & Co</p>
+                    </div>
+                  </div>
+                  <span class="contacts_last-chat">2020</span>
+                </li>
+
+                <li class="contact" data-contact="1">
+                  <div class="contacts-user">
+                    <img src="interview_new/img/avatar_2.jpg" alt="avatar">
+                    <div class="informations">
+                      <h4>Fabio</h4>
+                      <p>Non poteva essere altrimenti</p>
+                    </div>
+                  </div>
+                  <span class="contacts_last-chat">17.53</span>
+                </li>
+
+                <li class="contact" data-contact="2">
+                  <div class="contacts-user">
+                    <img src="interview_new/img/avatar_3.jpg" alt="avatar">
+                    <div class="informations">
+                      <h4>Samuele</h4>
+                      <p>Non poteva essere altrimenti</p>
+                    </div>
+                  </div>
+                  <span class="contacts_last-chat">17.53</span>
+                </li>
+
+                <li class="contact" data-contact="3">
+                  <div class="contacts-user">
+                    <img src="interview_new/img/avatar_4.jpg" alt="avatar">
+                    <div class="informations">
+                      <h4>Alessandro B.</h4>
+                      <p>Non poteva essere altrimenti</p>
+                    </div>
+                  </div>
+                  <span class="contacts_last-chat">17.53</span>
+                </li>
+
+                <li class="contact" data-contact="4">
+                  <div class="contacts-user">
+                    <img src="interview_new/img/avatar_5.jpg" alt="avatar">
+                    <div class="informations">
+                      <h4>Alessandro L.</h4>
+                      <p>Non poteva essere altrimenti</p>
+                    </div>
+                  </div>
+                  <span class="contacts_last-chat">17.53</span>
+                </li>
+
+                <li class="contact" data-contact="5">
+                  <div class="contacts-user">
+                    <img src="interview_new/img/avatar_6.jpg" alt="avatar">
+                    <div class="informations">
+                      <h4>Claudia</h4>
+                      <p>Non poteva essere altrimenti</p>
+                    </div>
+                  </div>
+                  <span class="contacts_last-chat">17.53</span>
+                </li>
+
+                <li class="contact" data-contact="6">
+                  <div class="contacts-user">
+                    <img src="interview_new/img/avatar_7.jpg" alt="avatar">
+                    <div class="informations">
+                      <h4>Davide</h4>
+                      <p>Non poteva essere altrimenti</p>
+                    </div>
+                  </div>
+                  <span class="contacts_last-chat">17.53</span>
+                </li>
+
+                <li class="contact" data-contact="7">
+                  <div class="contacts-user">
+                    <img src="interview_new/img/avatar_8.jpg" alt="avatar">
+                    <div class="informations">
+                      <h4>Federico</h4>
+                      <p>Non poteva essere altrimenti</p>
+                    </div>
+                  </div>
+                  <span class="contacts_last-chat">17.53</span>
+                </li>
+
+              </ul>
+            </section>
+
+          </main>
+
+        </div>
+
+        <!-- Contents box -->
+        <div class="contents">
+
+          <!-- Contents Header -->
+          <header class="contents-header">
+
+            <div class="contents-user active" data-contact="0">
+              <img src="interview_new/img/Abhinav_Kalra.jpg" alt="avatar">
+
+              <!-- Contents dati utente -->
+              <div class="informations">
+                <h4>Abhinav Kalra</h4>
+                <p>Bain & Co Batch-2020</p>
+              </div>
+            </div>
+
+            <div class="contents-user" data-contact="1">
+              <img src="interview_new/img/avatar_2.jpg" alt="avatar">
+
+              <!-- Contents dati utente -->
+              <div class="informations">
+                <h4>Fabio</h4>
+                <p>Ultimo accesso oggi alle 15.40</p>
+              </div>
+            </div>
+
+            <div class="contents-user" data-contact="2">
+              <img src="interview_new/img/avatar_3.jpg" alt="avatar">
+
+              <!-- Contents dati utente -->
+              <div class="informations">
+                <h4>Samuele</h4>
+                <p>Ultimo accesso oggi alle 15.40</p>
+              </div>
+            </div>
+
+            <div class="contents-user" data-contact="3">
+              <img src="interview_new/img/avatar_4.jpg" alt="avatar">
+
+              <!-- Contents dati utente -->
+              <div class="informations">
+                <h4>Alessandro B.</h4>
+                <p>Ultimo accesso oggi alle 15.40</p>
+              </div>
+            </div>
+
+            <div class="contents-user" data-contact="4">
+              <img src="interview_new/img/avatar_5.jpg" alt="avatar">
+
+              <!-- Contents dati utente -->
+              <div class="informations">
+                <h4>Alessandro L.</h4>
+                <p>Ultimo accesso oggi alle 15.40</p>
+              </div>
+            </div>
+
+            <div class="contents-user" data-contact="5">
+              <img src="interview_new/img/avatar_6.jpg" alt="avatar">
+
+              <!-- Contents dati utente -->
+              <div class="informations">
+                <h4>Claudia</h4>
+                <p>Ultimo accesso oggi alle 15.40</p>
+              </div>
+            </div>
+
+            <div class="contents-user" data-contact="6">
+              <img src="interview_new/img/avatar_7.jpg" alt="avatar">
+
+              <!-- Contents dati utente -->
+              <div class="informations">
+                <h4>Davide</h4>
+                <p>Ultimo accesso oggi alle 15.40</p>
+              </div>
+            </div>
+
+            <div class="contents-user" data-contact="7">
+              <img src="interview_new/img/avatar_8.jpg" alt="avatar">
+
+              <!-- Contents dati utente -->
+              <div class="informations">
+                <h4>Federico</h4>
+                <p>Ultimo accesso oggi alle 15.40</p>
+              </div>
+            </div>
+
+            <!-- Contents icone -->
+            <div class="icons">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-paperclip"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+
+          </header>
+
+          <!-- Contents main -->
+          <main class="contents-main">
+
+            <!-- Messaggi chat -->
+              <ul class="container-messages active" data-contact="0">
+
+                <li class="message sent">
+                  <p>What were your most memorable moments at IIT? Could you describe any moments when you felt low at IIT and what you did to get back to normal?</p>
+                </li>
+
+                <li class="message received">
+                  <p>The most memorable time I spent at IIT was hanging out with friends- roaming around ex-hall late at night, going to night mess, playing with them, having introspective conversations with them. Any time spent with friends in IIT is memorable for me. I also had a great time when I went to South Korea for my foreign-exchange program. I got a chance to meet a lot of new people there and got to know about their perspective of life, that was a whole new learning experience for me.
+I didn't have any such low-moments but there were a lot of challenges which I had to overcome. It often became a daunting task to balance time between extra-curriculars and academics. These challenges are a part and parcel of life and usually it becomes easier with time.
+</p>
+                </li>
+
+                <li class="message sent">
+                  <p>What changes did you notice in your personality before and after IIT? How have your extra-curricular activities and internships been instrumental in causing the change?</p>
+                </li>
+                <li class="message received">
+                  <p>When I first came to IIT I was humbled, everybody in IIT is smart and an average student in IIT might be a genius outside the campus. My experience at campus has certainly helped me in making better decision. There are a lot of things to explore in IIT especially in IIT-Delhi, you can join any cultural club, sports, technical club and the college provides a lot of opportunities to compete at higher level. One can only do as much in a day. So basically when you chose what to do, it helps you understand yourself and eventually helps you make much better and rational decisions.
+
+My summer-internship at Goldman Sachs was again a great learning experience. I got to know how these big companies work, their internal structure and how I can make a contribution in the industry.</p>
+                </li>
+                <li class="message sent">
+                  <p>What words of advice would you give to your juniors- some things that they should do, some changes in the way of thinking, etc. Any specific advice for students of any particular year?</p>
+                </li>
+                <li class="message received">
+                  <p>The first advice that I would like to give to juniors is to never underestimate the importance of CGPA. A good CGPA opens the door for a lot of opportunities. Hence, it becomes clinical to strike an important balance between your academics and other ECAs. Another advice is something that I have mentioned previously, IIT offers you a lot of opportunities be it research work, sports, cultural activities, managing fests and events, technical communities. It is a great platform to experiment. I encourage everyone to explore more or less most of these, as it will help you understand yourself, your talents, likings, dis-likings.</p>
+                </li>
+                <li class="message sent">
+                  <p>What projects did you work on during IIT? Any favorite research stream?</p>
+                </li>
+                <li class="message received">
+                  <p>I experimented with robotics during my second year summers where in I worked on quadrotors. Specifically it was based on formation control for the quadrotor entities. The experience taught about the huge difference between planning something and actually implementing it on hardware and what comes out of it.
+I also did a project in named inclusive classroom wherein  we were trying to build a tech based solution which would aid visually impaired in lectures/classrooms by leveraging their mobile.
+My project experience was mostly implementational in nature, but surely I always enjoyed the mathematical and problem solving aspects of these and several other assignments/projects that I have done.</p>
+                </li>
+                <li class="message sent">
+                  <p>Did you find the Electrical Engineering branch exciting? Any specific advice for your juniors in this branch?</p>
+                </li>
+                <li class="message received">
+                  <p>I didn't like the Electrical core courses as much. I on the other hand had an inclination to computer science, mathematics and management courses (very different things). Electrical engineering is a really cool branch but unfortunately not my cup of tea. I would advice the juniors in EE to not have any bias against/in favor of EE courses. Would encourage them all to actually try out the courses before they give up to the hype of CS.
+I always advice to explore and sample options before finalising your choice.</p>
+                </li>
+                <li class="message sent">
+                  <p>Have you found your passion? Many people face a dilemma over “what is that they would love to do in life”. How did your time at IIT help you realise your future goals and what is it that you want to do in life?</p>
+                </li>
+                <li class="message received">
+                  <p>I love playing football. Apart from that I like problem solving and interacting with people. I have not as such found my passion yet, really hope my experience at management consulting would help me do that. I am really optimistic that problem solving would be an integral component of whatever I pursue in future.
+</p>
+                </li>
+                <li class="message sent">
+                  <p>If you could go back in time, what is it that you would like to change (regrets) ?</p>
+                </li>
+                <li class="message received">
+                  <p>I don't have any such regrets but if given a chance might have focused a bit more on improving my CGPA. Other than I tried my best to make most of opportunities that I got at IIT, at some I succeeded, at some I failed, no regrets!</p>
+                </li>
+                <li class="message sent">
+                  <p>Did you use any goal setting strategy or time management strategy which can be beneficial in crafting a career that we want to?</p>
+                </li>
+                <li class="message received">
+                  <p>I always believed in exploring and tapping the opportunities we get being in IIT Delhi. I think one should step back and see what s/he wants to do in life and then take step in the direction you think is fit for you. Nothing is perfect just like tea where everyone has sugar as per their own taste. </p>
+                </li>
+
+              </ul>
+
+              <ul class="container-messages" data-contact="1">
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>06:20</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>21:41</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>21:41</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+              </ul>
+
+              <ul class="container-messages" data-contact="2">
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>06:20</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>21:41</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>21:41</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+              </ul>
+
+              <ul class="container-messages" data-contact="3">
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>06:20</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>21:41</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+              </ul>
+
+              <ul class="container-messages" data-contact="4">
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>06:20</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>21:41</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+              </ul>
+
+              <ul class="container-messages" data-contact="5">
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>06:20</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>21:41</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+              </ul>
+
+              <ul class="container-messages" data-contact="6">
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>06:20</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>21:41</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+              </ul>
+
+              <ul class="container-messages" data-contact="7">
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>06:20</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>06:20</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message received">
+                  <p>Ciao come stai?</p>
+                  <span>14:21</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>21:41</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+                <li class="message sent">
+                  <p>Ciao come stai?</p>
+                  <span>06:20</span>
+                  <i class="fas fa-angle-down"></i>
+                  <ul class="message-options">
+                    <li>Info messaggio</li>
+                    <li class="delete-message">Cancella messaggio</li>
+                  </ul>
+                </li>
+
+              </ul>
+
+          </main>
+
+          <!-- Contents footer -->
+          <footer>
+
+            <i class="far fa-smile icon-left"></i>
+
+            <input type="text" class="new-message" placeholder="Type a message">
+
+            <i class="fas fa-microphone icon-right active"></i>
+            <i class="fas fa-paper-plane icon-right"></i>
+
+          </footer>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Templates -->
+    <div class="template">
+      <li class="message">
+        <p></p>
+        <span></span>
+        <i class="fas fa-angle-down"></i>
+        <ul class="message-options">
+          <li>Info messaggio</li>
+          <li class="delete-message">Cancella messaggio</li>
+        </ul>
+      </li>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="interview_new/script/main.js"></script>
+  </body>
+</html>
