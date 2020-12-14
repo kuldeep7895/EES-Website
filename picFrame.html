@@ -16,12 +16,25 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+<<<<<<< HEAD
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+>>>>>>> freshAttempt
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+<<<<<<< HEAD
     <title>Hello, world!</title>
+=======
+            <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+    <title>EES</title>
+>>>>>>> freshAttempt
 
     <style>
       section {
@@ -215,11 +228,265 @@
       .team-area .social li.instagram a {
         background-color: #cd486b;
       }
+<<<<<<< HEAD
     </style>
   </head>
   <body>
     <section id="team" class="team-area">
       <div class="container">
+=======
+      #teamPage{
+        margin-top: 0px;
+        width: 100%;
+        height: 120vh;
+        background-image: url("tmpics/EES17178.jpg");
+        background-size: 100% 100%;
+      }
+      .teamPage2{
+        display: none;
+      }
+      @media only screen and (max-width: 600px) {
+        #teamPage {
+          display: none;
+                }
+        .teamPage2{
+          display: block;
+        }
+      }
+      
+      .media li a i{
+        font-size: 30px;
+        transition: transform 0.4s ease-in;
+      }
+      .media li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        transition: all 0.4s ease-in;
+
+      }
+      .media{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top:35vh;
+        border:2px solid black;
+        border-radius: 5px;
+        width:55px;
+      }
+      .media li .facebook{
+        background-color: blue;
+        color:white
+      }
+
+      .media li .twitter{
+        background-color: #00B6F1;
+        color: white;
+      }
+
+      .media li .linkedin{
+        color: white;
+        background-color:  #0077B5
+      }
+      .media li .youtube{
+        color: white;
+        background-color: #FF0000
+      }
+      .media li a:hover i{
+        transform: rotate(360deg);
+      }
+      .media li .facebook:hover{
+        background-color: white;
+        color: blue;
+        border: 5px solid blue;
+      }
+      .media li .twitter:hover{
+        background-color: white;
+        color: #00B6F1;
+        border: 5px solid #00B6F1;
+      }
+      .media li .linkedin:hover{
+        background-color: white;
+        color: #0077B5;
+        border: 5px solid #0077B5;
+      }
+      .media li .youtube:hover{
+        background-color: white;
+        color: #FF0000;
+        border: 5px solid #FF0000;
+      }
+
+      .foot li{
+        display: inline;
+        font-size: 30px;
+        margin-left: 50px;
+      }
+      .foot{
+        display: none;
+        color: white;
+      }
+
+      @media only screen and (max-width: 620px) {
+        .media{
+          display: none;
+        }
+        .foot{
+          display: block;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h" href="index.html"
+                ><img src="img/logo.png" alt="" height="50px"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
+                <ul class="nav navbar-nav menu_nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li> -->
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Blog</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="interview.html"
+                          >Interview Series</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="resorces.html">Resources</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a
+                      href="contact.html"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Our Team</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html"
+                          >Current Team</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact17.html">2017-18</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact16.html">2016-17</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact15.html">2015-16</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </div>
+    </header>
+    <!--================Header Menu Area =================-->
+  
+          <!--================Home Banner Area =================-->
+          <section class="teamBanner">
+             <div id="teamPage">
+               
+             </div>
+          </section>
+
+          <section class="banner_area teamPage2">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<div class="page_link">
+							<a href="index.html">Home</a>
+							<a href="contact.html">CONTACT</a>
+						</div>
+						<h2>CONTACT US</h2>
+
+					</div>
+				</div>
+            </div>
+        </section>
+
+
+
+    
+          <div class="media" style="float: left;">
+            <ul>
+              <li>            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+         
+
+        <div style="clear:both"></div>
+
+    <section id="team" class="team-area">
+      <div class="container pr-4 pl-4">
+>>>>>>> freshAttempt
         <div class="row">
           <div class="col-md-12 text-center">
             <h2>Our <span style="color: crimson">Team</span></h2>
@@ -1482,7 +1749,11 @@
           <div class="col-md-3 single-item">
             <div class="item">
               <div class="thumb">
+<<<<<<< HEAD
                 <img class="img-fluid" src="tmpics/saksham.jpg" alt="Thumb" />
+=======
+                <img class="img-fluid" src="tmpics/saksham.JPG" alt="Thumb" />
+>>>>>>> freshAttempt
 
                 <!--This is the faded div that appears o hover -->
                 <div class="overlay">
@@ -1533,7 +1804,11 @@
               <div class="thumb">
                 <img
                   class="img-fluid"
+<<<<<<< HEAD
                   src="tmpics/suhani.jpg"
+=======
+                  src="tmpics/suhani.png"
+>>>>>>> freshAttempt
                   alt="Thumb"
                 />
 
@@ -1584,6 +1859,70 @@
         </div>
       </div>
     </section>
+<<<<<<< HEAD
+=======
+
+            <!--================End Upcoming Games Area =================-->
+            <div id="footer">
+              <div class="foot">
+                <div class="row justify-content-center">
+                  <p style="font-family: 'Lobster', cursive;font-size:25px;color:white">Follow us</p>
+                </div>
+                <div class="row justify-content-center">
+                  <ul>
+                    <li>            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <div>              &#169; Copyright 2019. Electrical Engineering Society, IIT Delhi
+              </div>
+            </div>
+
+            <!--================End Footer Area =================-->
+
+        <!--================Contact Success and Error message Area =================-->
+        <div id="success" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Thank you</h2>
+                        <p>Your message is successfully sent...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals error -->
+
+        <div id="error" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Sorry !</h2>
+                        <p> Something went wrong </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================End Contact Success and Error message Area =================-->
+
+
+
+>>>>>>> freshAttempt
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
