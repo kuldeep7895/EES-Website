@@ -1,0 +1,416 @@
+/* LAYOUT GENERALE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+}
+
+/* Contenitore generale */
+#app {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to bottom,
+    #009688 0%,
+    #009688 15%,
+    #dcdbd2 15%,
+    #dcdbd2 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-user {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+/* Contenitore principale */
+#box {
+  height: 95%;
+  width: 80%;
+  min-width: 900px;
+  background-color: #fff;
+  display: flex;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+header img {
+  max-width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Icone */
+header i {
+  font-size: 21px;
+  color: #b1b1b1;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+header i:hover {
+  color: #0bceba;
+}
+
+.icons i {
+  margin-right: 15px;
+}
+
+/* Dati utente */
+.contents-user {
+  display: flex;
+  align-items: center;
+}
+
+/* Side box */
+.side {
+  height: 100%;
+  width: 35%;
+  background-color: #fff;
+  border-right: 1px solid #d6d6d6;
+}
+
+/* Side main */
+/* Sezione avviso */
+.notice {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #8edafd;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.notice:hover {
+  background-color: #0bceba;
+}
+
+.notice .informations p {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.notice .informations p:hover {
+  color: #fff;
+}
+
+.bell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.bell i {
+  font-size: 20px;
+  color: #8edafd;
+}
+
+/* Sezione input chat */
+.new-chat_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.new-chat_icon {
+  display: flex;
+  align-items: center;
+  padding: 6px 35px 6px 25px;
+  border: 1px solid #f6f6f6;
+  border-right: transparent;
+  cursor: pointer;
+}
+
+.new-chat_icon i {
+  font-size: 16px;
+  color: #b1b1b1;
+  cursor: pointer;
+}
+
+.new-chat {
+  flex-grow: 1;
+  border: 1px solid #f6f6f6;
+  border-left: transparent;
+  outline: none;
+  height: 30px;
+  padding: 12px 10px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* Sezione contatti */
+.contacts {
+  list-style: none;
+  overflow-y: auto;
+  height: calc(100vh - 216px);
+}
+
+.contacts li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 10px 10px 15px;
+  border-bottom: 1px solid #f6f6f6;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.contacts li:last-child {
+  border-bottom: none;
+}
+
+.contacts li:hover {
+  background-color: #eaebeb;
+}
+
+.contacts-user {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-user img {
+  max-width: 55px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.contacts-user .informations p {
+  color: #b7b9bb;
+}
+
+.contacts_last-chat {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #72787b;
+}
+
+/* Contents box */
+.contents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 65%;
+  background-color: #eaeaea;
+}
+
+/* Contents header */
+.contents-header {
+  border-bottom: 2px solid #eaeaea;
+}
+
+/* Contents Main */
+.contents-main {
+  flex-grow: 1;
+  background-image: url(../img/ees.png);
+  background-size: 100% 90vh;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: auto;
+  padding: 0 50px;
+}
+
+.contents-main .container-messages {
+  width: 100%;
+  list-style: none;
+}
+
+/* Messaggi Chat */
+.contents-main .container-messages .message {
+  position: relative;
+  float: left;
+  clear: both;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  min-height: 50px;
+  font-size: 14px;
+  padding: 10px 5px 5px 10px;
+  border-radius: 8px;
+}
+
+.message i {
+  display: none;
+  position: absolute;
+  left: 82%;
+  top: 10%;
+  font-size: 16px;
+  color: #b7b9bb;
+  cursor: pointer;
+}
+
+.message .message-options {
+  display: none;
+  position: absolute;
+  left: 15%;
+  top: 35%;
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+  width: 120px;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.message .message-options li {
+  cursor: pointer;
+}
+
+.message .message-options li:first-child {
+  margin-bottom: 5px;
+}
+
+.message .message-options li:hover {
+  color: #b1b1b1;
+}
+
+.contents-main .container-messages .message p {
+  flex-grow: 1;
+  overflow-wrap: anywhere;
+}
+
+.contents-main .container-messages .message span {
+  align-self: flex-end;
+  justify-self: self-end;
+  font-size: 10px;
+  margin-left: 20px;
+  color: #b7b9bb;
+}
+
+/* Messaggi ricevuti */
+.contents-main .container-messages .message.received {
+  background-color: #fff;
+}
+
+/* Messaggi inviati */
+.contents-main .container-messages .message.sent {
+  float: right;
+  background-color: #d5faba;
+}
+
+.contents-main .container-messages .message.sent:first-child {
+  margin-top: 50px;
+}
+
+/* Contents footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px;
+  background-color: #f3eeeb;
+}
+
+/* Footer input */
+footer .new-message {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  height: 45px;
+  padding: 15px 12px;
+  font-size: 12px;
+}
+
+footer .new-message:hover,
+footer .new-message:focus {
+  outline: 2px solid #6b9af1;
+}
+
+/* Footer icons */
+footer i {
+  font-size: 23px;
+  color: #72787b;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+footer i:hover {
+  color: #0bceba;
+}
+
+.icon-left {
+  margin-right: 35px;
+}
+
+.icon-right {
+  display: none; /* Visualizzo con jQuery al focus di .new-message */
+  margin-left: 35px;
+}
+
+/* Utilities */
+.informations {
+  display: flex;
+  flex-direction: column;
+}
+
+.informations h4 {
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.informations p {
+  font-size: 12px;
+  color: #72787b;
+}
+
+.icon-right.active {
+  display: block;
+}
+
+.contents-user {
+  display: none;
+}
+
+.contents-user.active {
+  display: flex;
+}
+
+.contact.selected {
+  background-color: #eaebeb;
+  border-bottom: none;
+}
+
+.container-messages {
+  display: none;
+}
+
+.container-messages.active {
+  display: block;
+}
+
+.message i.active {
+  display: block;
+}
+
+.message .message-options.active {
+  display: block;
+}
+
+.template {
+  display: none;
+}

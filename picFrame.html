@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/banner/home-left.png" type="image/png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+            <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+    <title>EES</title>
+
+    <style>
+      section {
+        padding: 60px 0;
+      }
+      a,
+      a:hover,
+      a:focus,
+      a:active {
+        text-decoration: none;
+        outline: none;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .team-area .single-item {
+        margin-bottom: 30px;
+      }
+
+      .team-area .item .thumb {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .team-area .item .thumb::after {
+        background: #232323 none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        width: 100%;
+      }
+
+      .team-area .team-items .item:hover .thumb::after {
+        opacity: 0.7;
+      }
+
+      .team-area .item .thumb .overlay {
+        top: -100%;
+        left: 0;
+        padding: 20px;
+        position: absolute;
+        text-align: center;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .team-area .item:hover .thumb .overlay {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+      }
+
+      .team-area .item .thumb .overlay p {
+        color: #ffffff;
+      }
+
+      .team-area .item .thumb .overlay h4 {
+        color: #ffffff;
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+      }
+
+      .team-area .item .thumb img {
+        width: 100%;
+        height: 355px;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+      }
+
+      .team-area .item:hover .thumb img {
+        opacity: 0.6;
+      }
+
+      .team-area .item .thumb .social li {
+        display: inline-block;
+      }
+
+      .team-area .item .thumb .social li a {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        color: #ffffff;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 2px;
+        text-align: center;
+        width: 40px;
+      }
+
+      .team-area .info {
+        background: #ffffff none repeat scroll 0 0;
+        -moz-box-shadow: 0 0 10px #cccccc;
+        -webkit-box-shadow: 0 0 10px #cccccc;
+        -o-box-shadow: 0 0 10px #cccccc;
+        box-shadow: 0 0 10px #cccccc;
+        padding: 40px 20px 20px;
+        position: relative;
+        text-align: center;
+        z-index: 9;
+      }
+
+      .team-area .info .message {
+        height: 50px;
+        line-height: 40px;
+        margin-left: -25px;
+        margin-top: -25px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 50px;
+      }
+
+      .team-area .info .message a {
+        background: #fff none repeat scroll 0 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -moz-box-shadow: 0 0 10px #cccccc;
+        -webkit-box-shadow: 0 0 10px #cccccc;
+        -o-box-shadow: 0 0 10px #cccccc;
+        box-shadow: 0 0 10px #cccccc;
+        box-sizing: border-box;
+        color: #ff5a6e;
+        display: inline-block;
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        width: 50px;
+      }
+
+      .team-area .info .message a i {
+        font-weight: 500;
+      }
+
+      .team-area .info h4 {
+        font-weight: 600;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+      }
+
+      .team-area .info span {
+        color: #ff5a6e;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .team-area .social li.twitter a {
+        background-color: #00b6f1;
+      }
+
+      .team-area .social li.pinterest a {
+        background-color: #bd081c;
+      }
+
+      .team-area .social li.facebook a {
+        background-color: #3b5998;
+      }
+
+      .team-area .social li.google-plus a {
+        background-color: #df4a32;
+      }
+
+      .team-area .social li.vimeo a {
+        background-color: #1ab7ea;
+      }
+
+      .team-area .social li.instagram a {
+        background-color: #cd486b;
+      }
+      #teamPage{
+        margin-top: 0px;
+        width: 100%;
+        height: 120vh;
+        background-image: url("tmpics/EES17178.jpg");
+        background-size: 100% 100%;
+      }
+      .teamPage2{
+        display: none;
+      }
+      @media only screen and (max-width: 600px) {
+        #teamPage {
+          display: none;
+                }
+        .teamPage2{
+          display: block;
+        }
+      }
+      
+      .media li a i{
+        font-size: 30px;
+        transition: transform 0.4s ease-in;
+      }
+      .media li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        transition: all 0.4s ease-in;
+
+      }
+      .media{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top:35vh;
+        border:2px solid black;
+        border-radius: 5px;
+        width:55px;
+      }
+      .media li .facebook{
+        background-color: blue;
+        color:white
+      }
+
+      .media li .twitter{
+        background-color: #00B6F1;
+        color: white;
+      }
+
+      .media li .linkedin{
+        color: white;
+        background-color:  #0077B5
+      }
+      .media li .youtube{
+        color: white;
+        background-color: #FF0000
+      }
+      .media li a:hover i{
+        transform: rotate(360deg);
+      }
+      .media li .facebook:hover{
+        background-color: white;
+        color: blue;
+        border: 5px solid blue;
+      }
+      .media li .twitter:hover{
+        background-color: white;
+        color: #00B6F1;
+        border: 5px solid #00B6F1;
+      }
+      .media li .linkedin:hover{
+        background-color: white;
+        color: #0077B5;
+        border: 5px solid #0077B5;
+      }
+      .media li .youtube:hover{
+        background-color: white;
+        color: #FF0000;
+        border: 5px solid #FF0000;
+      }
+
+      .foot li{
+        display: inline;
+        font-size: 30px;
+        margin-left: 50px;
+      }
+      .foot{
+        display: none;
+        color: white;
+      }
+
+      @media only screen and (max-width: 620px) {
+        .media{
+          display: none;
+        }
+        .foot{
+          display: block;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <a class="navbar-brand logo_h" href="index.html"
+                ><img src="img/logo.png" alt="" height="50px"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div
+                class="collapse navbar-collapse offset"
+                id="navbarSupportedContent"
+              >
+                <ul class="nav navbar-nav menu_nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li> -->
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Blog</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="interview.html"
+                          >Interview Series</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="resorces.html">Resources</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item submenu dropdown">
+                    <a
+                      href="contact.html"
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Our Team</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html"
+                          >Current Team</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact17.html">2017-18</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact16.html">2016-17</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact15.html">2015-16</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </div>
+    </header>
+    <!--================Header Menu Area =================-->
+  
+          <!--================Home Banner Area =================-->
+          <section class="teamBanner">
+             <div id="teamPage">
+               
+             </div>
+          </section>
+
+          <section class="banner_area teamPage2">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<div class="page_link">
+							<a href="index.html">Home</a>
+							<a href="contact.html">CONTACT</a>
+						</div>
+						<h2>CONTACT US</h2>
+
+					</div>
+				</div>
+            </div>
+        </section>
+
+
+
+    
+          <div class="media" style="float: left;">
+            <ul>
+              <li>            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+         
+
+        <div style="clear:both"></div>
+
+    <section id="team" class="team-area">
+      <div class="container pr-4 pl-4">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Our <span style="color: crimson">Team</span></h2>
+            <h4 style="margin-top: 25px">Meet our awesome team members</h4>
+            <div
+              style="
+                width: 70px;
+                height: 4px;
+                border-radius: 5px;
+                background-color: crimson;
+                margin: 0 auto 50px auto;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="row team-items">
+          <!--This brings image of team memeber -->
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/sdjoshi.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Professor Sukumar Mishra</h4>
+                <span>Vice President</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/sm.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Professor S D Joshi</h4>
+                <span>President</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/ramkrishan.jpg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Ramakrishnan Maheshwari</h4>
+                <span>Treasurer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--General Secies come here-->
+        <!--General Secies come here-->
+        <!--General Secies come here-->
+        <!--General Secies come here-->
+        <!--General Secies come here-->
+
+        <div class="row" style="margin-top: 100px !important">
+          <div class="col-md-12 text-center">
+            <h2>General<span style="color: green"> Secrataries</span></h2>
+
+            <div
+              style="
+                width: 70px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: green;
+                margin: 0 auto 50px auto;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="row team-items justify-content-center">
+          <!--This brings image of team memeber -->
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/dev.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Dev Gajera</h4>
+                <span>General Secretary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/harshitjain.JPG"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Harshit Jain</h4>
+                <span>General Secretary</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Secies come here-->
+        <!--Secies come here-->
+        <!--Secies come here-->
+        <!--Secies come here-->
+        <!--Secies come here-->
+
+        <div class="row" style="margin-top: 100px !important">
+          <div class="col-md-12 text-center">
+            <h2><span style="color: blue">Secrataries</span></h2>
+
+            <div
+              style="
+                width: 70px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: blue;
+                margin: 0 auto 50px auto;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="row team-items justify-content-center">
+          <!--This brings image of team memeber -->
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/UjjwalAgrawal.jpg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Ujjwal Agrawal</h4>
+                <span>Secretary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/varun.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Varun Gupta</h4>
+                <span>Secretary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/arham.png" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Arham Raees</h4>
+                <span>Secretary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/sarthakgarg.jpg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Sarthak Garg</h4>
+                <span>Secretary</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row team-items justify-content-center"
+          style="margin-top: 50px !important"
+        >
+          <!--This brings image of team memeber -->
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/Pranay.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Pranay Singh</h4>
+                <span>Secretary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/Aditya Gupta.jpg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Aditya Gupta</h4>
+                <span>Secretary</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Exes come here-->
+        <!--Exes come here-->
+        <!--Exes come here-->
+        <!--Exes come here-->
+        <!--Exes come here-->
+        <!--Exes come here-->
+        <!--Exes come here-->
+        <!--Exes come here-->
+
+        <div class="row" style="margin-top: 100px !important">
+          <div class="col-md-12 text-center">
+            <h2><span style="color: #FF9702">Executives</span></h2>
+
+            <div
+              style="
+                width: 70px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: #FF9702;
+                margin: 0 auto 50px auto;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="row team-items justify-content-center">
+          <!--This brings image of team memeber -->
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/mukul.jpg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Mukul Singh</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/adarsh.png" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Adarsh Jain</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/harit.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Harit Jaiswal</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/aniket.jpg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Aniket Modi</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row team-items justify-content-center">
+          <!--This brings image of team memeber -->
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/anubhav.jpg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Anubhav Dubey</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/digvendra.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Digvendra Singh </h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/harman.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Harmaan Singh</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/himanshu.jpg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Himanshu Rajput</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row team-items justify-content-center">
+          <!--This brings image of team memeber -->
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/kashish.jpg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Kashish Arora</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/pranjal.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Pranjal Rai</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/redddy.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Reddy Chir</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/sarthak.jpg" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Sarthak Gupta</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+        <div class="row team-items justify-content-center">
+          <!--This brings image of team memeber -->
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/rohit.jpeg"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Rohit Agrawal</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img class="img-fluid" src="tmpics/saksham.JPG" alt="Thumb" />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Shaksham Rashtogi</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-3 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="tmpics/suhani.png"
+                  alt="Thumb"
+                />
+
+                <!--This is the faded div that appears o hover -->
+                <div class="overlay">
+                  <h4>Lorem Ipsum</h4>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="social">
+                    <ul>
+                      <li class="twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li class="instagram">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Info about the team member comes here-->
+              <div
+                class="info"
+                style="
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  box-shadow: 0px 10px 5px #aaaaaa;
+                "
+              >
+                <span class="message">
+                  <a href="#"><i class="fa fa-envelope-open"></i></a>
+                </span>
+                <h4>Suhani Jain</h4>
+                <span>Executive</span>
+              </div>
+            </div>
+          </div>
+
+                  </div>
+
+        
+        </div>
+      </div>
+    </section>
+
+            <!--================End Upcoming Games Area =================-->
+            <div id="footer">
+              <div class="foot">
+                <div class="row justify-content-center">
+                  <p style="font-family: 'Lobster', cursive;font-size:25px;color:white">Follow us</p>
+                </div>
+                <div class="row justify-content-center">
+                  <ul>
+                    <li>            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <div>              &#169; Copyright 2019. Electrical Engineering Society, IIT Delhi
+              </div>
+            </div>
+
+            <!--================End Footer Area =================-->
+
+        <!--================Contact Success and Error message Area =================-->
+        <div id="success" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Thank you</h2>
+                        <p>Your message is successfully sent...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals error -->
+
+        <div id="error" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Sorry !</h2>
+                        <p> Something went wrong </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================End Contact Success and Error message Area =================-->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
